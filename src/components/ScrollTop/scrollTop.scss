@@ -1,0 +1,29 @@
+@import '../../assets/variables/variables.scss';
+
+.scroll-top {
+    height: 1.75rem;
+    width: 1.75rem;
+    background-color: $orange;    
+    font-size: .8rem;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    opacity: .75;
+    a {
+        color: $offwhite;
+        transition: all ease .3s;
+        &:hover {
+            color: $offwhite;
+            transform: translateY(-25%);
+        }
+    }
+    @media(min-width: 992px){
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}

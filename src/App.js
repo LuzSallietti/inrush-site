@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import ExpandService from './components/ExpandService/ExpandService';
+import engineer_data from './helpers/servicesData';
+import { commissioning, test, control } from './helpers/servicesData';
 import './App.css';
+import 'aos/dist/aos.css';
 
 function App() {
+
+   
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path="/"><Home/></Route>
+        <Route path= "/servicios/ingenieria"><ExpandService data={engineer_data}/></Route>  
+        <Route path="/servicios/puesta"><ExpandService data={commissioning}/></Route>
+        <Route path="/servicios/ensayos"><ExpandService data={test}/></Route> 
+        <Route path="/servicios/proteccion"><ExpandService data={control}/></Route>   
+      </Switch>     
     </div>
+    </Router>
   );
 }
 

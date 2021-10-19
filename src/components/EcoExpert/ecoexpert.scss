@@ -1,0 +1,88 @@
+@import '../../assets/variables/variables.scss';
+
+.ecoexpert {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;    
+    background-color: #30a040;       
+    background-image: url('../../assets/images/ecoexpert.svg');
+    background-repeat: no-repeat;
+    background-position: 99% 100%;
+    background-size: 33% auto;
+
+    @media (min-width:768px){
+        flex-direction: row;
+        background-size: 25% auto;
+        clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
+    }
+    @media (min-width:1024px){
+        flex-direction: row;
+        padding-left:6rem ;
+        padding-right:6rem ;
+        
+        
+    }
+
+}
+.ecoexpert-img {
+    width: 50%;
+    padding: 2rem;
+    img {
+        width: 100%;
+        height: auto;
+        @media (min-width:576px){
+            padding: 1.5rem;
+        }
+        @media (min-width:768px){
+            padding: 1rem;
+        }
+        @media (min-width:1280px){
+            padding: 3rem;
+        }
+
+    }
+    @media (min-width:768px){
+        width: 25%;
+    }
+
+}
+.ecoexpert-info {
+    width: 100%;
+    padding-bottom: 3rem;
+    color: $offwhite;
+    font-size: 1.05rem;       
+    
+    @media (min-width:768px){
+        width: 75%;
+        padding: 3rem 0 3rem 1.5rem;
+        text-align: left;
+    }
+    @media (min-width:1024px){
+        padding: 3rem 0 3rem 3rem
+    }
+}
+.ecoexpert-info-btn {
+    background-color: $offwhite;    
+    border: 2px solid $offwhite;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #42b752;  
+    transition: all ease 0.25s;
+    margin-top: 1rem;
+    display: inline-block;
+    &:hover {
+        background-color: #30a040;
+        color: $offwhite;
+    }
+    i {
+        font-size: 0.75rem;
+    }
+    
+}

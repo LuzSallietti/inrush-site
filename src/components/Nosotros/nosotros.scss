@@ -1,0 +1,34 @@
+@import '../../assets/variables/variables.scss';
+
+
+.nosotros {
+    background-color: $dark_grey;
+    background-image: url('../../assets/images/nosotros-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: top right;
+    padding: 6rem 0 4rem 0;
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+    top: -7rem;
+    color: $offwhite;
+    h1 {
+        font-family: $oswald;
+        font-weight: 400;
+        font-size: 2rem;
+        letter-spacing: 0.025rem;
+    }
+    @media (min-width:1024px){    
+    padding: 6rem 0 4rem 0;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    background-size: 15%;
+    
+    }
+
+}
+.nosotros-article{
+    width: 75%;
+    @media (min-width: 768px) {
+        width: 50%;        
+    }
+}

@@ -1,0 +1,54 @@
+@import '../../assets/variables/variables.scss';
+
+.header-navbar {
+    font-family: 'Oswald', sans-serif;    
+    text-transform: uppercase;
+    letter-spacing: .025rem;
+    background-color: $dark_grey !important;
+    a {
+        color: rgba($color: $white, $alpha: 0.75) !important;
+        &:hover{
+            color: rgba($color: $white, $alpha: 1.0) !important;
+        }
+    }
+    @media (min-width: 992px){
+        background-color:rgba(0,0,0,.1) !important;
+    }
+}
+
+.navbar-active {
+    font-family: 'Oswald', sans-serif;   
+    text-transform: uppercase;
+    letter-spacing: .025rem;
+    background-color: $dark_grey !important;
+    border-bottom: 2px solid $orange;
+    a {
+        color: rgba($color: $white, $alpha: 0.75) !important;
+        &:hover{
+            color: rgba($color: $white, $alpha: 1.0) !important;
+        }
+    }
+}
+.navbar-nav {
+    @media (min-width:992px) {
+        margin-right: 4rem !important;        
+    }
+}
+.nav-link{
+    padding-left: 0.75rem !important;
+    padding-right: .75rem !important;
+}
+.dropdown-menu.show{
+    background-color: $dark_grey;
+    text-align: center;
+    @media (min-width:992px){
+        text-align: left;
+    }
+}
+.dropdown-item{
+    font-size: .8rem !important;
+    
+    &:hover{
+        background-color: $orange !important;
+    }
+}
