@@ -12,7 +12,7 @@ const Slider = () => {
         <Row className="p-0 slider-img">
             <div className="img-filter"></div>
             <picture>
-                <source media="(max-width:768px)" srcset={portadaSM}></source>                
+                <source media="(max-width:768px)" srcset={portada}></source>                
                 <img src={portada} alt="torres electricas de alta tension"></img>
             </picture>
         </Row>
