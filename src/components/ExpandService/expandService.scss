@@ -2,13 +2,13 @@
 
 .expandService {
     background-color: $offwhite;    
-    color: $dark_grey;
-    padding: 2rem 0;     
+    color: $dark_grey;         
     min-height: 100vh;
     
     @media (min-width:768px) {
         background-image: url('../../assets/images/portada.jpg');
-        background-size: cover;                       
+        background-size: cover;
+        padding: 2rem 0;                       
     }
 }
 .expandService-container {
