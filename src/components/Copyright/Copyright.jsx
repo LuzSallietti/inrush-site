@@ -12,8 +12,8 @@ const Copyright = () => {
             <img src={logofooter} alt="logo"></img>
         </div>
         <ul>
-            <li><a href="https://www.instagram.com/inrush_ingenieria/"><i className="fab fa-instagram px-1"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/inrush"><i className="fab fa-linkedin-in px-1"></i></a></li>
+            <li className="copyright-rss-instagram"><a href="https://www.instagram.com/inrush_ingenieria/"><i className="fab fa-instagram px-1"></i></a></li>
+            <li className="copyright-rss-linkedin"><a href="https://www.linkedin.com/company/inrush"><i className="fab fa-linkedin-in px-1"></i></a></li>
         </ul>
     </nav>
     </>

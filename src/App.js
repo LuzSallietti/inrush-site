@@ -14,10 +14,10 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/"><Home/></Route>
-        <Route path= "/servicios/ingenieria"><ExpandService data={engineer_data}/></Route>  
-        <Route path="/servicios/puesta"><ExpandService data={commissioning}/></Route>
-        <Route path="/servicios/ensayos"><ExpandService data={test}/></Route> 
-        <Route path="/servicios/proteccion"><ExpandService data={control}/></Route>   
+        <Route path = "/servicios/ingenieria"><ExpandService data={engineer_data}/></Route>  
+        <Route path = "/servicios/puesta"> <ExpandService data={commissioning}/></Route>
+        <Route path = "/servicios/ensayos"> <ExpandService data={test}/></Route> 
+        <Route path = "/servicios/proteccion"><ExpandService data={control}/></Route>   
       </Switch>     
     </div>
     </Router>

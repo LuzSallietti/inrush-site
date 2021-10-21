@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './menu.scss';
 import logoheader from '../../assets/images/logoheader.svg'
 import Navbar from 'react-bootstrap/Navbar'
@@ -9,15 +8,10 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 
 
 
-const Menu = () => {
-    let [navbar, setNavbar] = useState(false)
-    const changeBackground = () => {
-        window.scrollY > 60 ? setNavbar(true) : setNavbar(false)
-     }
-    window.addEventListener("scroll", changeBackground )
+const Menu = () => {    
 
     return <>
-    <Navbar expand="lg" className={navbar? "navbar-active py-3": "navbar-active py-3"} variant="dark">
+    <Navbar expand="lg" className="navbar-active py-3" variant="dark" id="menu">
         <Container>
             <Navbar.Brand href="/">
                 <img
@@ -41,11 +35,11 @@ const Menu = () => {
                     <Nav.Link href="/#nosotros">Nosotros</Nav.Link>
                     <Nav.Link href="/#novedades">Novedades</Nav.Link>
                     <Nav.Link href="/#link" >Artículos técnicos</Nav.Link>
-                    <Nav.Link href="/#contacto">Contacto</Nav.Link>                        
+                    <Nav.Link href="/#footer">Contacto</Nav.Link>                        
                 </Nav>
                 <div className="d-flex justify-content-center align-items-center">
-                    <a href="https://www.instagram.com/inrush_ingenieria/"><i className="fab fa-instagram px-1"></i></a>
-                    <a href="https://www.linkedin.com/company/inrush"><i className="fab fa-linkedin-in px-1"></i></a>
+                    <a href="https://www.instagram.com/inrush_ingenieria/" className="icon-rss-ig me-1"><i className="fab fa-instagram p-1"></i></a>
+                    <a href="https://www.linkedin.com/company/inrush" className="icon-rss-linkedin"><i className="fab fa-linkedin-in p-1"></i></a>
                 </div>
             </Navbar.Collapse>
         </Container>

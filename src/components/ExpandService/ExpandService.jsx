@@ -9,8 +9,14 @@ import './expandService.scss';
 
 const ExpandService = (props) => {
     useEffect(() => {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });    
     service.current.classList.add("expandService-container-animation")  
     });
+    
     const service = useRef()
     let {name, desc, images, next, prev} = props.data;
     let text = desc.split(".")    

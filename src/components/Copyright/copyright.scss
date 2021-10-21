@@ -25,13 +25,20 @@
             order: 3;
         }                
         li {
-            background-color: $orange;
+            
             padding: .25rem;
             border-radius: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: .5rem;
+            &:first-of-type {
+                background: #d6249f;
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            }
+            &:last-of-type {
+                background-color: #0e76a8;
+            }
             a {
                 color: white;
             }
