@@ -35,7 +35,7 @@ const Services = () => {
     <ul className="content-margin services">
         {services_data.map(({ name , desc, icon }) => {
             return <>
-            <li className="services-list">
+            <li key={name} className="services-list">
                 <img src={icon} alt={`${name} ícono`} className="services-list-icon"></img>
                 <h3>{name}</h3>
                 <p className="w-75 mx-auto">{desc}</p>

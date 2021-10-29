@@ -34,8 +34,8 @@ const Menu = () => {
                     </NavDropdown>
                     <Nav.Link href="/#nosotros">Nosotros</Nav.Link>
                     <Nav.Link href="/#novedades">Novedades</Nav.Link>
-                    <Nav.Link href="/#link" >Artículos técnicos</Nav.Link>
-                    <Nav.Link href="/#footer">Contacto</Nav.Link>                        
+                    <Nav.Link href="https://inrush.com.ar/articulos/category/articulos-tecnicos/">Artículos técnicos</Nav.Link>
+                    <Nav.Link href="/#contactSection">Contacto</Nav.Link>                        
                 </Nav>
                 <div className="d-flex justify-content-center align-items-center">
                     <a href="https://www.instagram.com/inrush_ingenieria/" className="icon-rss-ig me-1"><i className="fab fa-instagram p-1"></i></a>

@@ -53,7 +53,7 @@ const Contact = () => {
             <ul>
                 {company_info.map(({data, value, icon}) => {
                     return <>
-                    <li key={data}>
+                    <li key= {data} >
                         <span>
                             <i className={icon}></i>
                         </span>
@@ -73,23 +73,23 @@ const Contact = () => {
         <form className="contact-form" id="contact-form" ref={form} onSubmit={sendEmail}>            
             {sended ?<div className="contact-form-success"><h6>¡Gracias!<br></br>Recibimos tu mensaje</h6></div>: ""}
             {error ?<div className="contact-form-success"><h5 className="w-100">Algo salió mal :(</h5><h4>Por favor escríbenos a:<br></br>info@inrush.com.ar</h4></div>: ""}           
-            <h1>Contacto</h1>
+            <h1 id="contactSection">Contacto</h1>
             <h4>Dejanos tu mensaje</h4>            
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control bg-transparent text-white" id="name" placeholder="Nombre" name="name" required ></input>
-                <label for="name">Nombre</label>
+            <div className="form-floating mb-3">
+                <input type="text" className="form-control bg-transparent text-white" id="name" placeholder="Nombre" name="name" required ></input>
+                <label htmlFor="name">Nombre</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="email" class="form-control bg-transparent text-white" id="email" placeholder="Correo electrónico" name="email" required></input>
-                <label for="email">Correo electrónico</label>
+                <input type="email" className="form-control bg-transparent text-white" id="email" placeholder="Correo electrónico" name="email" required></input>
+                <label htmlFor="email">Correo electrónico</label>
             </div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control bg-transparent text-white" id="phone" placeholder="Teléfono" name="contact_number"></input>
-                <label for="phone">Teléfono</label>
+            <div className="form-floating mb-3">
+                <input type="text" className="form-control bg-transparent text-white" id="phone" placeholder="Teléfono" name="contact_number"></input>
+                <label htmlFor="phone">Teléfono</label>
             </div>
             <div class="form-floating">
-                <textarea class="form-control mb-3 bg-transparent text-white" placeholder="Mensaje" id="message" name="message" required></textarea>
-                <label for="message">Mensaje</label>
+                <textarea className="form-control mb-3 bg-transparent text-white" placeholder="Mensaje" id="message" name="message" required></textarea>
+                <label htmlFor="message">Mensaje</label>
             </div>
             <button type="submit" className="contact-form-btn">Enviar</button>
         </form>
