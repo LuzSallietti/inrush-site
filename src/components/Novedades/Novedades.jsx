@@ -12,8 +12,8 @@ const Novedades = () => {
         fetch('https://inrush.com.ar/articulos/wp-json/wp/v2/posts?categories=25&_embed')
         .then((response) => response.json())
         .then((posts) => {
-            setPosts(posts)
-            console.log(posts)
+            posts.length<6?setPosts(posts):setPosts(posts.slice(0,6))
+            console.log(posts.length)
             setIsLoading(false)      
         })
     }, []);

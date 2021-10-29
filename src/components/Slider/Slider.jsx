@@ -14,7 +14,7 @@ const Slider = () => {
         </Row>
         <div className="slider-intro" id="sliderIntro">                
             <div className="slider-intro-logo"><img src={logoSVG} alt="logo" className="w-100 h-auto"></img></div>
-            <h3>Profesionalismo y experiencia<br></br>en servicios de Ingeniería.</h3>
+            <h1>Profesionalismo y experiencia<br></br>en servicios de Ingeniería.</h1>
             <a href="/#novedades" className="slider-intro-btn">Ver novedades</a>
         </div>            
     </Container>
