@@ -9,7 +9,7 @@ const Novedades = () => {
     let [posts, setPosts] = useState(false)
 
     useEffect(() => {
-        fetch('http://inrush.com.ar/articulos/wp-json/wp/v2/posts?categories=25&_embed')
+        fetch('https://inrush.com.ar/articulos/wp-json/wp/v2/posts?categories=25&_embed')
         .then((response) => response.json())
         .then((posts) => {
             setPosts(posts)
