@@ -33,7 +33,7 @@ const Menu = () => {
                     <NavDropdown.Item href="/servicios/proteccion">Protección y control</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="/#nosotros">Nosotros</Nav.Link>
-                    <Nav.Link href="/#novedades">Novedades</Nav.Link>
+                    <Nav.Link href="https://inrush.com.ar/articulos/category/novedades">Novedades</Nav.Link>
                     <Nav.Link href="https://inrush.com.ar/articulos/category/articulos-tecnicos/">Artículos técnicos</Nav.Link>
                     <Nav.Link href="/#contactSection">Contacto</Nav.Link>                        
                 </Nav>
