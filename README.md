@@ -1,6 +1,6 @@
 # Inrush - Company web page created with React JS
 
-Built with React JS, this site shows my client engeneering services, technical articles and news. Created consuming the Wordpress API. 
+Built with React JS, this site shows the company engineering services, technical articles and news. Created consuming the Wordpress API. 
 
 ## Table of contents
 
@@ -25,11 +25,11 @@ Users should be able to:
 My client should be able to:
 
 - Create a blogpost.
-- Admin blogposts.
+- Administrate blogposts.
 
 ### Links
 
-- Live Site URL: [Inrush](https://react-movflix-luzsallietti.vercel.app/)
+- Live Site URL: [Inrush](https://inrush-site-luzsallietti.vercel.app/)
 
 ## My process
 
